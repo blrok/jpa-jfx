@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: rgba(18,92,236,0.12941176470588237)rgba(18,92,236,0.12941176470588237);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.xanshee.controller.LoginController">
+   <top>
+      <StackPane prefHeight="80.0" prefWidth="1000.0" style="-fx-background-color: rgba(130,194,254,0.2)rgba(130,194,254,0.2)rgba(130,194,254,0.2)rgba(130,194,254,0.2);" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnBackMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onBtnBackMain" prefHeight="40.0" prefWidth="180.0" text="Хуваарь харах" translateX="450.0">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Button>
+            <Label text="Fndr" textFill="#0096fff5" translateX="-500.0">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+   </top>
+   <center>
+      <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" translateY="100.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <TextField fx:id="txtLoginName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0" promptText="Нэвтрэх нэр" style="-fx-background-color: #fff;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtPassword" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0" promptText="Нууц үг" style="-fx-background-color: #fff;" translateY="50.0" StackPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="btnLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onBtnLoginClick" prefHeight="40.0" prefWidth="200.0" text="Нэвтрэх" translateY="120.0" />
+            <ImageView fx:id="imgView" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" translateY="-100.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin></StackPane>
+   </center>
+</BorderPane>
